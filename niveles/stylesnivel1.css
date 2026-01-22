@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Rubik+Spray+Paint&display=swap');
+
+body{
+    background-image: url("../img/backgrounds/nivel1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.puerta{
+    height: 110px;
+    width: 110px;
+    background-image: url(../img/sprites/puerta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.puerta_abierta{
+    height: 110px;
+    width: 110px;
+    background-image: url(../img/sprites/puerta_abierta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#puerta{
+    position: absolute;
+    top: 1.4%;
+    left: 20%;
+}
+
+.boton{
+    height: 40px;
+    width: 90px;
+    background-image: url(../img/sprites/boton.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#boton1{
+    position: absolute;
+    top: 79%;
+    left: 60%;
+}
+
+#boton2{
+    position: absolute;
+    top: 25.5%;
+    left: 50%;
+}
+
+.boton-pulsado{
+    height: 40px;
+    width: 90px;
+    background-image: url(../img/sprites/boton_pulsado.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.zona-suelo{
+    height: 20%;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    z-index: 0;
+    align-items: self-end;
+    background-color: aqua;
+    opacity: 40%;
+    clip-path: polygon(0 30%, 10% 20%, 30% 25%, 50% 20%, 70% 25%, 90% 20%, 100% 30%, 100% 100%, 0 100%);
+
+}
+
+.plataforma{
+    margin-top: auto;
+    z-index: 0;
+    position: absolute;
+    align-items: self-end;
+    background-color: rgb(70, 105, 194);
+}
+
+#plataforma0{
+    height: 3%;
+    width: 20%;
+    top: 73%;
+    left: 75%;
+}
+
+#plataforma1{
+    height: 30px;
+    width: 150px;
+    top: 14%;
+    left: 60%;
+}
+
+#plataforma2{
+    height: 30px;
+    width: 10%;
+    top: 29%;
+    left: 45%;
+}
+
+#plataforma3{
+    height: 30px;
+    width: 150px;
+    top: 12%;
+    left: 20%;
+}
+
+#plataforma4{
+    height: 30px;
+    width: 150px;
+    top: 20%;
+    left: 33%;
+}
+.personaje{
+    height: 80px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;
+}
+
+#personaje1{
+    background-image: url(../img/sprites/personaje1.png);
+    position: absolute;
+    top: 76%;
+    left: 10%;
+}
+
+#personaje2{
+    background-image: url(../img/sprites/presonaje2.png);
+    /* background-color: black; */
+    position: absolute;
+    top: 76%;
+    left: 17%;
+}
+
+#llave {
+    position: absolute;
+    top: 10%;    
+    left: 34%;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/sprites/llave.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 20;
+}
+#reloj {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    padding: 10px 18px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 24px;
+    font-family: 'Chewy', sans-serif;
+    border-radius: 10px;
+    z-index: 50; /* para que no lo tapen las plataformas */
+}
